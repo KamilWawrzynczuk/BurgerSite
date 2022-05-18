@@ -76,9 +76,17 @@ header {
 
     h1 {
       font-size: 15rem;
+
+      @include media-breakpoint-up(xs) { font-size: 5rem;}
+      @include media-breakpoint-up(sm) { font-size: 5rem; }
+      @include media-breakpoint-up(md) { font-size: 10rem; }
+      @include media-breakpoint-up(lg) { font-size: 15rem; }
+        
+      }
+
+      
     }
   }
-}
 
 .btn-size {
   padding: 1rem 2rem;
