@@ -9715,11 +9715,7 @@ header .header_image {
 }
 header .header_image h1 {
   font-size: 15rem;
-}
-@media (min-width: 576px) {
-  header .header_image h1 {
-    font-size: 5rem;
-  }
+  font-size: 5rem;
 }
 @media (min-width: 576px) {
   header .header_image h1 {
