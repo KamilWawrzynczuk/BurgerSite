@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$primary: purple;
+$dark: #000;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$display-font-sizes: (
+  1: 6rem,
+  2: 5.5rem,
+  3: 5rem,
+  4: 4.5rem,
+  5: 4rem,
+  6: 3.5rem,
+);
+
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  border-radius: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
+$black: #000;
+
+nav {
+  background-color: $black;
+  font-size: 2rem;
+
+  a {
+    color: $primary;
+
+    &:hover {
+      color: darkened($primary, 15%);
+    }
+  }
+}
+
+header {
+  width: 100%;
+  min-height: 75vh;
+  background-image: url("../images/lidye-1Shk_PkNkNw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .header_image {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    margin-left: 5rem;
+
+    h1 {
+      font-size: 15rem;
+    }
+  }
+}
+
+.btn-size {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h1,
+.h2 {
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #fff;
+  font-size: 8rem;
+}
+
+.card {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+
+  .card_image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $black;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 70%;
+  }
+}
